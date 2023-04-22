@@ -1,0 +1,35 @@
+name: push-to-server
+ 
+
+on:
+
+  push:
+    branches: [ main ]
+
+  workflow_dispatch:
+ 
+
+jobs:
+
+  deploy-via-sftp:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v2
+          
+      - name: SFTP Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          username: anthony
+          server: 143.198.165.141
+          port: 22
+          password: ${{ secrets.FTP_PASSWORD }}
+ 
+          
+
+          local_path: ./*
+
+          remote_path: /var/www/thisistherealdomain.site/public_html/hw2
+          
+
+          args: '-o ConnectTimeout=5'
