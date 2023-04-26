@@ -5,7 +5,6 @@ require 'json'
 puts "Cache-Control: no-cache\n";
 puts "Content-type: application/json\n\n";
 
-cgi = CGI.new
 
 ip_address = ENV['REMOTE_ADDR']
 
@@ -17,4 +16,4 @@ json_data = {
     ip_address: ENV['REMOTE_ADDR']
 }
 
-puts "<h1> Something here </h1>"
+puts "#{json_data}"
