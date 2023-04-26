@@ -6,7 +6,7 @@ puts "Content-type: text/html \n\n";
 # print HTML file top
 puts "<!DOCTYPE html>
 <html><head><title>Environment Variables</title>
-</head><body><h1 align="center">Environment Variables</h1>
+</head><body><h1>Environment Variables</h1>
 <hr>"
 
 ENV.each do |key, value|
