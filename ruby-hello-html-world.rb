@@ -17,8 +17,6 @@ date = Time.now;
 
 puts "<p>Current Time: #{date.localtime}</p>";
 
-ip_address = cgi.REMOTE_ADDR;
-
 puts "<p>Your IP Address: #{ip_address}</p>";
 
 puts "</body>";
