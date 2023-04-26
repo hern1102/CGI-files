@@ -1,4 +1,4 @@
-#!/usr/bin/ruby -w
+#!/usr/bin/ruby
 
 ip_address = ENV['REMOTE_ADDR']
 
