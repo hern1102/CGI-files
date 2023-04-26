@@ -17,4 +17,4 @@ json_data = {
     ip_address: ENV['REMOTE_ADDR']
 }
 
-puts json_data
+puts "<h1> Something here </h1>"
