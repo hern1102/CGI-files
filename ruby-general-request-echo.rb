@@ -30,9 +30,11 @@ puts "<b>Message body:</b><br />\n";
 
 # # Credit for this code to parse the Query string:
 # # https://www.mediacollege.com/internet/perl/query-string.html
-params.each do |key, value|
-puts "<li>#{key} = #{value[0]}</li><br/>\n";
-end
+if q_str < 1
+    params.each do |key, value|
+    puts "<li>#{key} = #{value[0]}</li><br/>\n";
+    end
+end 
 
 # Print the HTML file bottom
 puts "</body></html>";
